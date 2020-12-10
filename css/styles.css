@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container-card {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ==========Navigation========== */
+
+ul {
+    list-style: none;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    background-color: #3f3f3f;   
+    height: 100px;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+.text-menu a:hover {
+    color: chartreuse; 
+    font-size: 1.3rem;
+    transform: scale(1.2) initial;
+    transition: all 0.5s;
+}
+#menu-down ul.hide {
+    display: none;
+    margin-block-start: 0;
+}
+#menu-down {
+    position: fixed;
+    top: 60px;
+    height: 100vh;
+    width: 160px;
+    background: black;
+    right: 0;
+    transition: right 1.5s;
+    padding-inline-start: 20px;
+    list-style: none;
+}
+#menu-down.hide {
+    right: -200px;
+}
+.fas {
+    color: white;
+}  
+@media (min-width: 576px) {
+    #menu-down {
+        left: 0;
+        width: 100%;
+        height: 100px;
+        top: 40px;
+        background-color: rgba(0, 0, 0, 0);
+        text-align: center;
+    }
+    #menu-down li {
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* ==========section One-two========== */
+
+.row {
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    background-size: cover;
+    border-radius: 5px;
+}
+.card {
+    list-style: none;
+    padding: 15px;
+    display: flex;
+}
+.card-body {
+    padding: 15px;
+}
+.button-car {
+    padding: 6px 14px;
+    font-size: 1.2em;
+    border: solid 1px black; 
+    border-radius: 4px;
+    color: black;
+    background: white;
+    text-decoration: none;
+}
+
+/* ==========section three========== */
+
+.card-button {
+    
+    align-items: end;
+    display: block;
+    margin: 25px;
+    text-align: center;
+}
+.card-button a {
+    color: black;
+    padding: 5px 25px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    display: inline-block;  
+}
+.card-body-img {
+    background: white;
+    border-right:solid 0.5px gray;
+}
+.card-scale:hover {
+    transform: scale(1.05);
+}
+.card-button:hover {
+    transform: scale(1.05);
+}
+.card-button:hover a {
+    background: #0c2340;
+    color: white;
+}
+/* ==========footer========== */
+.p-footer {
+    font-size: 0.6em;
+}
+.fab {
+    color: white;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.menu-footer {
+  list-style: none;
+  display: inline;
+}
+.text-h2 {
+    font-size: 1.3em;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+}
+hr {
+    width: 40%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    padding-inline-start: 0;
+}
+li {
+    list-style: none;
+}
+.final-logo {
+    padding: 0;
+}
+
+/* ==========Components========== */
+
+.text-center {
+    text-align: center;
+}
+.space-top {
+    padding-top: 15px;
+}
+.space-bottom {
+    padding-bottom: 15px;
+}
+.title {
+    font-size: 2.2em;
+}
+
+/* ==========Helpers========== */
+
+.d-flex {
+    display: flex;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
